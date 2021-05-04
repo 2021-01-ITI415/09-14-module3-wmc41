@@ -8,6 +8,8 @@ TagManager:
   - Doorway
   - Enemy_Zone
   - Ambiance
+  - Collectible
+  - Collector
   layers:
   - Default
   - TransparentFX
