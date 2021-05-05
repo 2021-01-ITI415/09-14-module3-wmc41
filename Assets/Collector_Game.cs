@@ -22,21 +22,15 @@ public class Collector_Game : MonoBehaviour
         if (other.gameObject.CompareTag("Collectible"))
         {
             //Destroy(this.gameObject);
-            other.gameObject.SetActive(false);
             count = count + 1;
             SetCountText();
+            other.gameObject.SetActive(false);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void SetCountText()
     {
-        countText.text = "Count: " + count.ToString();
+        countText.text = "Collected " + count.ToString() + " out of 21";
         if (count >= 20)
         {
             winText.text = "You Win!";
